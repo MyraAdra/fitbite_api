@@ -13,7 +13,10 @@ const { ObjectId, GridFSBucket } = require("mongodb");
 
 
 const app = express();
-app.use(cors());
+//app.use(cors());
+app.use(cors({
+  origin: "https://myraadra.github.io"
+}));
 app.use(express.json());
 
 
