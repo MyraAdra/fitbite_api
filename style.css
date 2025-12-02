@@ -1,0 +1,180 @@
+/* =========================================================
+   🥗 MealPrep Admin Dashboard – Full Styling
+   Theme: Fresh Greens & Healthy Vibes
+   ========================================================= */
+
+:root {
+  --primary: #4CAF50;     /* Main green */
+  --secondary: #8BC34A;   /* Light green */
+  --bg: #F6F9F4;          /* Light natural */
+  --card-bg: #FFFFFF;
+  --text-dark: #2E3A23;
+  --accent: #FFC107;      /* Highlight yellow */
+  --danger: #C62828;
+  --shadow: rgba(0, 0, 0, 0.08);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-dark);
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+/* =================== HEADER =================== */
+.admin-header {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  padding: 20px 0;
+  border-bottom: 4px solid var(--accent);
+  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+
+  display: flex;
+  justify-content: center; /* Full banner center */
+  align-items: center;
+  text-align: center;
+}
+
+.branding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-logo {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  border-radius: 50%; /* circle mask */
+  background: var(--card-bg); /* or var(--primary) for green circle */
+  padding: 5px;
+}
+
+.admin-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.admin-subtitle {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+/* =================== TABS =================== */
+.nav-pills .nav-link {
+  background: var(--primary);
+  margin: 0 10px;
+  color: #fff !important;
+  border-radius: 25px;
+  padding: 10px 20px;
+  transition: 0.25s ease;
+  font-weight: 500;
+}
+
+.nav-pills .nav-link:hover {
+  background: var(--secondary);
+  color: #fff !important;
+}
+
+.nav-pills .nav-link.active {
+  background: var(--accent);
+  color: var(--text-dark) !important;
+  font-weight: 600;
+}
+
+.nav-pills .nav-link i.bi {
+  color: #fff !important;
+}
+
+/* =================== CARDS / TABLE SECTIONS =================== */
+.admin-section {
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px var(--shadow);
+  transition: 0.3s ease;
+}
+
+.admin-section:hover {
+  transform: translateY(-1px);
+}
+
+/* =================== TABLE =================== */
+table thead {
+  background: var(--secondary);
+  color: #fff;
+}
+
+table tbody tr:hover {
+  background: rgba(139, 195, 74, 0.15);
+}
+
+/* =================== BUTTONS =================== */
+.btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.btn-primary:hover {
+  background: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.btn-warning {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.btn-warning:hover {
+  filter: brightness(0.9);
+}
+
+.btn-danger {
+  background: var(--danger);
+  border-color: var(--danger);
+  font-weight: 600;
+}
+
+.btn-danger:hover {
+  filter: brightness(0.85);
+}
+
+/* =================== MODAL =================== */
+.modal-content {
+  border-radius: 14px;
+  border: none;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.modal-header {
+  background: var(--primary);
+  color: #fff;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+.modal-footer {
+  border: none;
+}
+
+.form-control, textarea {
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+}
+
+/* =================== ICON RENDERING =================== */
+i.bi {
+  font-size: 18px;
+  color: var(--primary);
+}
+
+td i.bi {
+  font-size: 22px;
+}
