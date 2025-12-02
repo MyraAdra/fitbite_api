@@ -1,4 +1,5 @@
-const API = "http://localhost:3000";
+//const API = "http://localhost:3000";
+const API = "https://fitbite-api-idi9.onrender.com";
 const modal = new bootstrap.Modal(document.getElementById('adminModal'));
 
 document.addEventListener("DOMContentLoaded", () => {
